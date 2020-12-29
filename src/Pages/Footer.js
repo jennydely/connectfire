@@ -1,10 +1,18 @@
 import styled from 'styled-components/macro'
 import back from '../img/back.svg'
+import { useHistory } from 'react-router-dom'
 
 export default function Footer() {
+
+    const history = useHistory()
+
+    function handleGoBack() {
+        history.goBack()
+    }
+
     return (
         <footer>
-            <BackButton > <img src={back} alt="back button" /></BackButton>
+            <BackButton onClick={handleGoBack} > <img src={back} alt="back button" /></BackButton>
         </footer>
     )
 
