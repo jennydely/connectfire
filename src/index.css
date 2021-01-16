@@ -4,8 +4,9 @@
 
 #root{
   display: grid;
+  text-align: center;
   grid-template-rows: 60px auto 60px;
-  width: 375px;
+  max-width: 375px;
     position: fixed;
     overflow: hidden;
     left: 0;
@@ -46,8 +47,12 @@ grid-template-columns: repeat(3,101px);
 grid-template-rows: repeat(5,auto);
 row-gap:20px;
 column-gap:20px;
-overflow-y:scroll;
 scrollbar-width: none;
+overflow-y:scroll;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 footer {

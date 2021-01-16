@@ -4,7 +4,7 @@ import login from '../img/login.svg'
 export default function Header() {
     return (
         <header>
-            <LoginButton ><img src={login} alt="login button" /></LoginButton>
+            <LoginButton >Login</LoginButton>
         </header>
     )
 
